@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        form { max-width: 400px; margin: 0 auto; }
+        input, button { width: 100%; padding: 10px; margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Admin Panel Demo</h1>
+    <form>
+        <h2>Login Form</h2>
+        <input type="text" placeholder="Username (any)" required>
+        <input type="password" placeholder="Password (any)" required>
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <script>
+        function login() {
+            // В демо просто перенаправляем в админку
+            window.location.href = "/admin";
+        }
+    </script>
+</body>
+</html>
